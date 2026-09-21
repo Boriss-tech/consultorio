@@ -12,6 +12,7 @@ dist-ssr/
 .env
 .env.*
 !.env.example
+.Claude outputs
 
 # Bases de datos locales (cuando exista el backend con SQLite)
 *.sqlite
