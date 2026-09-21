@@ -1,0 +1,32 @@
+# Dependencias e instalación
+node_modules/
+
+# Build
+dist/
+dist-ssr/
+*.local
+
+# Información sensible — credenciales, cuentas de prueba y cualquier
+# variable de entorno real. Solo se versiona .env.example (sin valores
+# reales). Nunca se debe subir un .env con contraseñas o claves.
+.env
+.env.*
+!.env.example
+
+# Bases de datos locales (cuando exista el backend con SQLite)
+*.sqlite
+*.sqlite3
+*.db
+
+# Editor / SO
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
