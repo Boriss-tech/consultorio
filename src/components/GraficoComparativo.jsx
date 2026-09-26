@@ -3,8 +3,8 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsive
 // Dos series categóricas -> hues distinguibles + leyenda siempre presente
 // (RF04: horas agendadas vs. horas utilizadas). El color sigue a la
 // entidad ("agendadas" / "utilizadas"), nunca a su posición.
-const AGENDADAS = '#8f6420' // warn (ámbar) — capacidad disponible
-const UTILIZADAS = '#0f6b5c' // brand (teal) — capacidad efectivamente usada
+const AGENDADAS = '#18bfb1' // warn (ámbar) — capacidad disponible
+const UTILIZADAS = '#b51dbb' // brand (teal) — capacidad efectivamente usada
 
 function CustomTooltip({ active, payload, label }) {
   if (!active || !payload?.length) return null

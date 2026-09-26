@@ -1,10 +1,6 @@
 import { useRef, useState } from 'react'
 import { useAuth } from '../auth/AuthContext.jsx'
 
-// Formulario de acceso. Sigue las guías de accesibilidad de formularios:
-// labels asociados (htmlFor), envío vía onSubmit + preventDefault,
-// resumen de error enfocable (role="alert" + tabIndex=-1 + foco tras fallo),
-// y feedback de carga visible durante el envío.
 export default function Login() {
   const { login } = useAuth()
   const [usuario, setUsuario] = useState('')
@@ -18,15 +14,12 @@ export default function Login() {
     setError(null)
     setCargando(true)
 
-    // Simula la latencia de un login real contra el backend.
     setTimeout(() => {
       try {
         login(usuario.trim(), password)
       } catch (err) {
         setError(err.message)
         setCargando(false)
-        // Mueve el foco al resumen de error para lectores de pantalla y
-        // navegación por teclado (no reemplaza, complementa validación inline).
         requestAnimationFrame(() => errorRef.current?.focus())
       }
     }, 350)

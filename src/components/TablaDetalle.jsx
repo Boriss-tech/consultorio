@@ -1,4 +1,3 @@
-// Vista de detalle / drill-down de un indicador (RF09).
 export default function TablaDetalle({ rows }) {
   return (
     <div className="rounded-xl bg-white border border-slate-200 shadow-sm overflow-hidden">

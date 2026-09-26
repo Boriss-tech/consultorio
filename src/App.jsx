@@ -11,8 +11,6 @@ export default function App() {
 
   if (!user) return <Login />
 
-  // Un usuario con rol "consulta" nunca debería quedar en la vista admin
-  // (por ejemplo, si cambia de cuenta en la misma pestaña).
   const vistaActiva = view === 'admin' && user.rol !== 'admin' ? 'dashboard' : view
 
   return (

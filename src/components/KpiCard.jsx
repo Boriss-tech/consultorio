@@ -1,6 +1,3 @@
-// Tarjeta de indicador (KPI). `status` controla el acento semántico:
-// 'normal' | 'warn' | 'critical' — nunca reemplaza el color de marca,
-// se usa solo cuando el indicador cruza un umbral (RF08).
 const STATUS_STYLES = {
   normal: { ring: 'ring-brand-100', chip: 'bg-brand-50 text-brand-700', dot: 'bg-brand-600' },
   warn: { ring: 'ring-warn-100', chip: 'bg-warn-100 text-warn-600', dot: 'bg-warn-600' },

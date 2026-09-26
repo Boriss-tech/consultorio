@@ -1,8 +1,5 @@
 import { useState } from 'react'
 
-// Módulo de administración (RF10: gestión de usuarios, RF11: carga de
-// datos). Vista funcional a nivel de interfaz — se conecta a los
-// endpoints reales de /api/admin/* en el Sprint 3, cuando exista backend.
 const USUARIOS_MOCK = [
   { nombre: 'Director/a CESFAM', usuario: 'direccion', rol: 'consulta' },
   { nombre: 'Encargado/a SOME', usuario: 'some', rol: 'consulta' },
@@ -24,7 +21,7 @@ export default function Administracion() {
       <div className="rounded-xl bg-white border border-slate-200 shadow-sm">
         <div className="px-5 py-4 border-b border-slate-100">
           <h2 className="text-sm font-semibold text-slate-700">Usuarios del sistema</h2>
-          <p className="text-xs text-slate-500 mt-0.5">RF10 — gestión de cuentas y niveles de acceso</p>
+          <p className="text-xs text-slate-500 mt-0.5">Gestión de cuentas y niveles de acceso</p>
         </div>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
@@ -55,7 +52,7 @@ export default function Administracion() {
       <div className="rounded-xl bg-white border border-slate-200 shadow-sm p-5">
         <h2 className="text-sm font-semibold text-slate-700">Carga de datos</h2>
         <p className="text-xs text-slate-500 mt-0.5 mb-4">
-          RF11 — actualizar el dataset que alimenta el Dashboard (CSV/JSON)
+          Actualizar el dataset que alimenta el Dashboard (CSV/JSON)
         </p>
 
         <label

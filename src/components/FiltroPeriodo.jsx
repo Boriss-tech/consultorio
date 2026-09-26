@@ -1,5 +1,4 @@
-// Filtro de rango de fechas (RF06). Se ubica en una sola fila sobre los
-// gráficos, como pide la guía de interacción del Dashboard.
+
 export default function FiltroPeriodo({ desde, hasta, onChange, onAplicar }) {
   return (
     <div className="flex flex-wrap items-end gap-3 rounded-xl bg-white border border-slate-200 p-4 shadow-sm">

@@ -1,12 +1,5 @@
 @import "tailwindcss";
 
-/*
-  Tokens de marca del proyecto (mismo teal usado en el informe y los
-  diagramas de arquitectura). Estructura de tokens y tipografía informadas
-  por la skill ui-ux-pro-max (perfil "Healthcare App": limpio, accesible,
-  profesional) — el hue se mantiene como el ya establecido en el proyecto
-  para dar continuidad visual entre el informe, los diagramas y el Dashboard.
-*/
 @theme {
   --font-sans: 'Figtree', 'Noto Sans', ui-sans-serif, system-ui, sans-serif;
 
@@ -27,14 +20,11 @@ body {
   font-family: var(--font-sans);
 }
 
-/* Foco visible consistente para navegación por teclado (checklist de
-   accesibilidad: "focus states visible for keyboard nav"). */
 :focus-visible {
   outline: 2px solid var(--color-brand-600);
   outline-offset: 2px;
 }
 
-/* Respeta prefers-reduced-motion en toda la app. */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.001ms !important;

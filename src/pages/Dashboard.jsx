@@ -16,8 +16,7 @@ import {
 const pct = (v) => `${Math.round(v * 100)}%`
 const min = (v) => `${Math.round(v)} min`
 
-// Umbral de alerta para inasistencia (RF08) — ajustable según lo que el
-// equipo defina como "crítico" para el CESFAM.
+
 const UMBRAL_INASISTENCIA_CRITICO = 0.2
 const UMBRAL_INASISTENCIA_ALERTA = 0.15
 
@@ -43,9 +42,6 @@ export default function Dashboard() {
 
   useEffect(() => {
     cargarDatos(filtro)
-    // Carga inicial con el período por defecto; llamadas siguientes las
-    // dispara el botón "Aplicar" del filtro, no cada tecla.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const inasistenciaStatus = !data

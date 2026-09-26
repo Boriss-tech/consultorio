@@ -13,7 +13,6 @@ function CustomTooltip({ active, payload, label, formatValue }) {
   )
 }
 
-// Serie única -> un solo hue (marca), sin leyenda (el título ya la nombra).
 export default function GraficoTendencia({ title, data, formatValue = (v) => v }) {
   return (
     <div className="rounded-xl bg-white border border-slate-200 p-5 shadow-sm">

@@ -14,10 +14,10 @@ export default function Layout({ view, onChangeView, children }) {
       <header className="border-b border-slate-200 bg-white">
         <div className="mx-auto max-w-6xl px-6 py-4 flex flex-wrap items-center justify-between gap-4">
           <div>
-            <p className="text-xs font-medium uppercase tracking-wide text-brand-600">
+            <p className="text-xl font-medium uppercase tracking-wide text-brand-600">
               Gestión Inteligente CESFAM
             </p>
-            <h1 className="text-lg font-semibold text-slate-900">
+            <h1 className="text-2xl font-semibold text-slate-900">
               CESFAM Profesor Eugenio Cienfuegos — Dashboard de gestión
             </h1>
           </div>

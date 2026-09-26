@@ -1,23 +1,13 @@
-# Dependencias e instalación
 node_modules/
 
-# Build
 dist/
 dist-ssr/
 *.local
 
-# Información sensible — credenciales, cuentas de prueba y cualquier
-# variable de entorno real. Solo se versiona .env.example (sin valores
-# reales). Nunca se debe subir un .env con contraseñas o claves.
 .env
 .env.*
 !.env.example
 .Claude outputs
-
-# Bases de datos locales (cuando exista el backend con SQLite)
-*.sqlite
-*.sqlite3
-*.db
 
 # Editor / SO
 .vscode/*
